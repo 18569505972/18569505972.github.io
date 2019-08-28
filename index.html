@@ -1,21 +1,29 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="x5-orientation" content="portrait">
     <meta name="full-screen" content="no">
     <meta name="browsermode" content="application">
+    <script type="text/javascript">
+    !(function() {
+        var whdef = 100 / 2450;
+        var wW = window.innerWidth; // 当前窗口的宽度
+        var rem = wW * whdef;
+        document.getElementsByTagName("html")[0].style.fontSize = rem + 'px'
+    })()
+    </script>
     <script src="./immersive-custom-elements.js"></script>
     <style type="text/css">
-    *{
-    	padding: 0;
-    	margin: 0;
+    * {
+        padding: 0;
+        margin: 0;
     }
     </style>
 </head>
 
 <body>
-    <img-360 src="./3.jpg" width="1000" height="875"></img-360>
+    <img-360 src="./3.jpg" width="750" height="117"></img-360>
 </body>
 
 </html>
