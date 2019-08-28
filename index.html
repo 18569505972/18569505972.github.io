@@ -1,21 +1,26 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="x5-orientation" content="portrait">
     <meta name="full-screen" content="no">
     <meta name="browsermode" content="application">
     <script src="./immersive-custom-elements.js"></script>
     <style type="text/css">
-    *{
-    	padding: 0;
-    	margin: 0;
+    * {
+        padding: 0;
+        margin: 0;
     }
     </style>
 </head>
 
 <body>
-    <img-360 src="./4.jpg" width="1000" height="875"></img-360>
+    <img-360 src="./3.jpg" id="img360"></img-360>
+    <script type="text/javascript">
+    var dom = document.querySelector("img-360");
+    dom.setAttribute('width', window.screen.availWidth);
+    dom.setAttribute('height', window.screen.availWidth * 1.16);
+    </script>
 </body>
 
 </html>
